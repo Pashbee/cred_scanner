@@ -13,7 +13,7 @@ This was written in Python 3.6.
 
 To enable auto-complete, please add the following line to your bashrc/bash_profile:-
 
-	<path_to_cred_scanner_local_repo>/cred-scanner-complete.sh
+	. <path_to_cred_scanner_local_repo>/cred-scanner-complete.sh
 
 To run:
 
