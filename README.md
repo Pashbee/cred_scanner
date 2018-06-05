@@ -7,13 +7,17 @@ I suspect there are other, better tools out there (such as [git-secrets](https:/
 
 To install just copy it where you want it and install the requirements:
 
-	pip install -r ./requirements.txt
+	pip install .
 
 This was written in Python 3.6.
 
+To enable auto-complete, please add the following line to your bashrc/bash_profile:-
+
+	<path_to_cred_scanner_local_repo>/cred-scanner-complete.sh
+
 To run:
 
-	python cred_scanner.py 
+	cred_scanner 
 
 That will scan the local directory and all subdirectories. It will list the files, which ones have potential access keys, and which files can't be scanned due to the file format. cred_scanner exits with a code of 1 if it finds any potential keys.
 
