@@ -8,7 +8,6 @@ import click
 @click.option('--path', default='.', help='Path other than the local directory to scan')
 @click.option('--secret', is_flag=True, help='Also look for Secret Key patterns. This may result in many false matches due to the nature of secret keys.')
 def scan(path, secret):
-    click.secho()
     fail = False
     for dirname, dirnames, filenames in os.walk(path):
         # print path to all subdirectories first.
